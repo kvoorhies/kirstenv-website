@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kirsten Voorhies | Biostatistician</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <style>
-          body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-          }
-      
-          header {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          }
-      
-          nav h1 {
-            margin: 0;
-            font-size: 24px;
-          }
-      
-          nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-          }
-      
-          nav ul li a {
-            text-decoration: none;
-            color: #333;
-          }
-      
-          section {
-            padding: 40px 20px;
-          }
-      
-          .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007acc;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-          }
-      
-          footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-          }
-        </style>
-      </head>      
-<body>
-  <header>
-    <nav>
-      <h1>Kirsten Voorhies</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirsten Voorhies | Biostatistician</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Harvard_shield_wreath.svg" alt="Harvard Logo" class="h-10 w-10">
+        <h1 class="text-2xl font-bold">Kirsten Voorhies</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+        <a href="#publications" class="text-gray-600 hover:text-blue-600">Publications</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="hero">
-    <h2>Hello, I'm Kirsten</h2>
-    <p>I’m a biostatistician passionate about transforming healthcare data into actionable insights.</p>
-    <a href="#work" class="btn">See My Work</a>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>With a strong background in biostatistics, I specialize in analyzing complex healthcare datasets to drive informed decision-making. My experience spans roles as a Senior Biostatistician and Healthcare Economics Analyst, where I've contributed to impactful research and policy development.</p>
-  </section>
-
-  <section id="work">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Healthcare Cost Analysis Tool</h3>
-      <p>Developed an interactive dashboard to visualize and analyze healthcare expenditure trends, aiding stakeholders in identifying cost-saving opportunities.</p>
-      <a href="#" target="_blank">View Project</a>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-100 to-blue-200 py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Transforming Healthcare Data into Actionable Insights</h2>
+      <p class="text-lg mb-6">Biostatistician at Harvard Pilgrim Health Care Institute & Harvard Medical School</p>
+      <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Get in Touch</a>
     </div>
-    <!-- Add more projects as needed -->
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via email at <a href="mailto:kirsten@kirstenv.com">kirsten@kirstenv.com</a> or connect with me on <a href="https://www.linkedin.com/in/kirsten-voorhies/" target="_blank">LinkedIn</a>.</p>
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+      <p class="mb-4">I'm a dedicated biostatistician with a passion for leveraging data to improve public health outcomes. At the Department of Population Medicine, I focus on analyzing complex datasets to inform healthcare policies and practices.</p>
+      <p class="mb-4">My academic journey began at Brown University, where I earned my ScM in Biostatistics. Since then, I've collaborated on numerous research projects, contributing to advancements in genomics and epidemiology.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Kirsten Voorhies</p>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6">Featured Projects</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Genome-Wide Association Study on Asthma</h4>
+          <p class="mb-4">Analyzed UK Biobank data to identify genetic variants associated with asthma exacerbations and eosinophilia.</p>
+          <a href="https://www.medrxiv.org/content/10.1101/2023.04.12.23288479v1" target="_blank" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Neural Network Models for Spirometric Phenotypes</h4>
+          <p class="mb-4">Developed neural network models to adjust spirometric and smoking phenotypes, enhancing the accuracy of genetic studies.</p>
+          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0266752" target="_blank" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-6">Publications</h3>
+      <ul class="list-disc list-inside space-y-4">
+        <li>
+          <strong>Association of PHACTR1 with Coronary Artery Calcium Differs by Sex and Cigarette Smoking</strong><br>
+          <em>June 2024</em> - <a href="https://pubmed.ncbi.nlm.nih.gov/39057616/" target="_blank" class="text-blue-600 hover:underline">PubMed</a>
+        </li>
+        <li>
+          <strong>Examining the Effect of Genes on Depression as Mediated by Smoking and Modified by Sex</strong><br>
+          <em>April 2024</em> - <a href="https://www.medrxiv.org/content/10.1101/2023.04.12.23288479v1" target="_blank" class="text-blue-600 hover:underline">medRxiv</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-100 py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
+      <p class="mb-4">I'm always open to discussing research collaborations, data analysis projects, or speaking engagements. Feel free to reach out!</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:kirsten@kirstenv.com" class="inline-block bg-white text-blue-700 border border-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition">
+          Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/kirsten-voorhies/" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-20">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+      &copy; 2025 Kirsten Voorhies.
+    </div>
   </footer>
 </body>
 </html>
