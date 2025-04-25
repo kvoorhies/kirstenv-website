@@ -4,155 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kirsten Voorhies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #333;
-    }
-    header {
-      background-color: #0f172a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h1, h2 {
-      margin-bottom: 0.5rem;
-    }
-    .contact-info {
-      font-size: 1rem;
-      color: #475569;
-    }
-    ul {
-      padding-left: 1.25rem;
-    }
-    .tag {
-      display: inline-block;
-      background: #e2e8f0;
-      color: #1e293b;
-      border-radius: 12px;
-      padding: 0.25rem 0.75rem;
-      margin: 0.25rem;
-      font-size: 0.9rem;
-    }
-    .publication-list {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .publication-list li {
-      margin-bottom: 1rem;
-    }
-    .publication-list a {
-      text-decoration: none;
-      color: #1d4ed8;
-    }
-    .publication-list a:hover {
-      text-decoration: underline;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Kirsten Voorhies</h1>
-    <p class="contact-info">📍 Austin, TX | 📧 KVoorhie@gmail.com
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center">
+          <a href="index.html" class="text-xl font-bold text-gray-900">Kirsten Voorhies</a>
+        </div>
+        <nav class="hidden sm:flex sm:space-x-8">
+          <a href="index.html" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+          <a href="publications.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Publications</a>
+          <a href="contact.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</a>
+        </nav>
+      </div>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Biostatistician and data scientist with a passion for applying rigorous statistical and machine learning methods to complex real-world data. Creator of multiple R packages and first-author on several publications.</p>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">About</h2>
+      <p class="text-gray-700">Biostatistician and data scientist with a passion for applying rigorous statistical and machine learning methods to complex real-world data. Creator of multiple R packages and first-author on several publications.</p>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Education</h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-1">
         <li><strong>University of Texas at Austin</strong> — MS in Data Science (Expected May 2026)</li>
         <li><strong>Brown University</strong> — MS in Biostatistics (2018–2020)</li>
         <li><strong>Arizona State University</strong> — BS in Mathematics (Statistics) and Psychology (2013–2017)</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Professional Experience</h2>
-      <ul>
-        <li><strong>Senior Biostatistician</strong>, Harvard Pilgrim Health Care Institute (2023–2025)<br />
-          Lead on 10 projects, 7 first-author publications, advanced machine learning and statistical analysis, GitHub R packages.
-        </li>
-        <li><strong>Biostatistician</strong>, Harvard Pilgrim Health Care Institute (2020–2023)<br />
-          Statistical modeling, visualization, peer-reviewed publications.
-        </li>
-        <li><strong>Research Assistant</strong>, Brown University (2019–2020)<br />
-          Medicare data analysis, meta-analysis replicability.
-        </li>
-        <li><strong>Teaching Assistant</strong>, Brown University (2020)<br />
-          Statistical learning course support.
-        </li>
-        <li><strong>Senior Healthcare Economics Analyst</strong>, United Healthcare (2017–2018)<br />
-          Medicaid claims analysis, reporting for senior management.
-        </li>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Professional Experience</h2>
+      <ul class="list-disc pl-6 text-gray-700 space-y-4">
+        <li><strong>Senior Biostatistician</strong>, Harvard Pilgrim Health Care Institute (2023–2025)<br />Lead on 10 projects, 7 first-author publications, advanced machine learning and statistical analysis, GitHub R packages.</li>
+        <li><strong>Biostatistician</strong>, Harvard Pilgrim Health Care Institute (2020–2023)<br />Statistical modeling, visualization, peer-reviewed publications.</li>
+        <li><strong>Research Assistant</strong>, Brown University (2019–2020)<br />Medicare data analysis, meta-analysis replicability.</li>
+        <li><strong>Teaching Assistant</strong>, Brown University (2020)<br />Statistical learning course support.</li>
+        <li><strong>Senior Healthcare Economics Analyst</strong>, United Healthcare (2017–2018)<br />Medicaid claims analysis, reporting for senior management.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div>
-        <span class="tag">R</span>
-        <span class="tag">Statistics</span>
-        <span class="tag">Python</span>
-        <span class="tag">SQL</span>
-        <span class="tag">SPSS</span>
-        <span class="tag">SAS</span>
-        <span class="tag">Unix</span>
-        <span class="tag">GitHub</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">LaTeX</span>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Skills</h2>
+      <div class="flex flex-wrap gap-2 text-sm">
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">R</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">Statistics</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">Python</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">SQL</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">SPSS</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">SAS</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">Unix</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">GitHub</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">Machine Learning</span>
+        <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full">LaTeX</span>
       </div>
     </section>
 
-    <section>
-      <h2>Research Interests</h2>
-      <p>Genetic epidemiology, causal inference, machine learning in healthcare, pediatric oncology, and respiratory disease modeling.</p>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Research Interests</h2>
+      <p class="text-gray-700">Genetic epidemiology, causal inference, machine learning in healthcare, pediatric oncology, and respiratory disease modeling.</p>
     </section>
+  </main>
 
-    <section>
-      <h2>Projects & Publications</h2>
-      <ul class="publication-list">
-        <li>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38790194/" target="_blank">
-            Examining the Effect of Genes on Depression as Mediated by Smoking and Modified by Sex
-          </a><br />
-          <em>Genes (Basel). 2024 Apr 27;15(5):565.</em>
-        </li>
-        <li>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38674355/" target="_blank">
-            GSDMB/ORMDL3 Rare/Common Variants Are Associated with Inhaled Corticosteroid Response among Children with Asthma
-          </a><br />
-          <em>Genes (Basel). 2024 Mar 28;15(4):420.</em>
-        </li>
-        <li>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/36261115/" target="_blank">
-            Supportive Interventions for Childhood Cancer: An Umbrella Review of Randomized Evidence
-          </a><br />
-          <em>Crit Rev Oncol Hematol. 2022 Dec;180:103845.</em>
-        </li>
-        <li>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35500225/" target="_blank">
-            Selection Bias When Inferring the Effect Direction in Mendelian Randomization
-          </a><br />
-          <em>Genet Epidemiol. 2022 Jul;46(5-6):341-343.</em>
-        </li>
-        <li>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35544468/" target="_blank">
-            Covariate Adjustment of Spirometric and Smoking Phenotypes: The Potential of Neural Network Models
-          </a><br />
-          <em>
-::contentReference[oaicite:3]{index=3}
- 
+  <footer class="bg-white text-center text-gray-500 text-sm py-6 mt-10">
+    <p>&copy; 2025 Kirsten Voorhies | <a href="https://www.linkedin.com/in/kirsten-voorhies/" class="underline" target="_blank">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
